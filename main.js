@@ -1,6 +1,46 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+function getFirstItemFrom(arr){
+  return arr[0]
+}
+
+function getLastItemFrom(arr){
+  return arr[arr.length-1]
+}
+
+function getIndex3(arr){
+  if (arr.length >= 4){
+    return arr[3]
+  }
+  else {
+    return arr[arr.length-1]
+  }
+}
+
+function isLongList(arr){
+  if (arr.length >= 10){
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+function firstItemIsNumber(arr){
+  const numbers = [1,2,3,4,5,6,7,8,9,0]
+  if (numbers.includes(arr[0])){
+    return true
+  }
+  else {
+    return false
+  }
+}
+
+function secondCharOfThirdString(arr){
+  let x = arr[2].split('')
+  return x[1]
+}
 
 
 
